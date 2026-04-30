@@ -2,26 +2,23 @@
   "name": "prisma-tutorials",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/nickonyi/Prisma-tutorials#readme",
-  "bugs": {
-    "url": "https://github.com/nickonyi/Prisma-tutorials/issues"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickonyi/Prisma-tutorials.git"
   },
-  "license": "ISC",
+  "keywords": [],
   "author": "",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nickonyi/Prisma-tutorials/issues"
   },
+  "homepage": "https://github.com/nickonyi/Prisma-tutorials#readme",
   "dependencies": {
-    "@prisma/adapter-pg": "^7.8.0",
-    "@prisma/client": "^7.8.0",
-    "dotenv": "^17.4.2",
-    "pg": "^8.20.0",
     "prisma": "^7.8.0"
   }
 }
