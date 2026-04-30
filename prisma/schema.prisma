@@ -11,3 +11,18 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model User {
+  id Int @id @default(autoincrement())
+  emai String @unique
+  name String?
+  articles Article[]
+}
+
+model Article {
+  id Int @id @default(autoincrement())
+  title String
+  body String?
+  author User @relation(fields:[authorId],references:[id])
+  authorId Int
+}
