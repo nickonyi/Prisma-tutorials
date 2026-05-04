@@ -3,8 +3,8 @@ import { prisma } from "./lib/prisma.js";
 const main = async () => {
   const user = await prisma.user.create({
     data: {
-      name: "Johndoe",
-      email: "johndoe@email.com",
+      name: "Demarco",
+      email: "Demarco@email.com",
     },
   });
 
