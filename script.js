@@ -3,12 +3,18 @@ import { prisma } from "./lib/prisma.js";
 const main = async () => {
   const user = await prisma.user.create({
     data: {
-      name: "Demarco",
-      email: "Demarco@email.com",
+      email: "ariadne@prisma.io",
+      name: "Ariadne",
+      posts: {
+        create: [
+          {
+            title: "My first day at prisma",
+            categories: { create: { name: "office" } },
+          },
+        ],
+      },
     },
   });
-
-  console.log(user);
 };
 
 main()
