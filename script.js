@@ -3,8 +3,8 @@ import { getUsersWithPosts } from "./generated/prisma/sql/getUsersWithPosts.js";
 import { getUsersByAge } from "./generated/prisma/sql/getUsersByAge.js";
 const main = async () => {
   const usersWithPostCounts = await prisma.$queryRawTyped(getUsersWithPosts());
-  const usersAge = await prisma.$queryRawTyped(getUsersByAge(2, 10));
-  console.log(usersAge);
+  const usersAges = await prisma.$queryRawTyped(getUsersByAge(2, 10));
+  console.log(usersAges);
 };
 
 main()
