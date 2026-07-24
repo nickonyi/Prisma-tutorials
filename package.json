@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/nickonyi/Prisma-tutorials/issues"
   },
@@ -23,5 +23,8 @@
     "@prisma/client": "^7.9.0",
     "dotenv": "^17.4.2",
     "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.9.0"
   }
 }
