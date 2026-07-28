@@ -17,6 +17,7 @@ async function main() {
   });
 
   console.log("Created user:", user);
+  console.log("Dont delay");
 
   const allUsers = await prisma.user.findMany({
     include: { posts: true },
